@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    container_name: app_flask
+    image: app_flask
+    ports:
+      - "5000:5000"
+
+networks:
+  default:
+    external:
+      name: bridge0

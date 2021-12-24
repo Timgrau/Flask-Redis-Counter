@@ -1,0 +1,19 @@
+<form class="w3-container", method="POST">
+<style>
+label {
+  color: purple;
+  padding: 8px;
+}
+input{
+  color: purple;
+}
+input[type="text"]{
+ background-color: purple;
+ color: black; 
+}
+</style>
+   {{ form.csrf_token }}
+   {{ form.username.label }} {{ form.username(size=20) }}
+   {{ form.submit }}
+   <!-- <input type="submit" value="enter"> -->
+</form>
