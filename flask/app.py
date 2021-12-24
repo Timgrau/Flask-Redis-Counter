@@ -4,7 +4,6 @@ from wtforms import StringField, validators, SubmitField
 from flask_wtf import FlaskForm
 import datetime as dt
 
-host='192.168.0.2'
 
 
 
@@ -12,7 +11,7 @@ host='192.168.0.2'
 client = redis.Redis(host=host, port=6379)
 q = []
 q.append("dummy")
-###########
+#############
 
 app = Flask(__name__)
 app.config.from_object(__name__)
